@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -26,35 +26,48 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <NavLink to='/' className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400' : 'font-bold'}>
+              <NavLink to='/' className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 Home
               </NavLink>
-              <NavLink to='/listed' className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400' : 'font-bold'}>
+              <NavLink to='/listed-books' className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 Listed Books
               </NavLink>
-              <NavLink to='/pages' className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400' : 'font-bold'}>
+              <NavLink to="/pages" className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 Pages to read
+              </NavLink>
+              <NavLink to="/contact" className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
+                Contact
+              </NavLink>
+              <NavLink to="/about" className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
+                About
               </NavLink>
             </ul>
           </div>
-          <a className="btn btn-ghost text-2xl font-extrabold">Book Vibe</a>
+          <Link to='/' className="btn btn-ghost text-2xl font-extrabold">BookVibe</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-4 cursor-pointer">
-          <NavLink to='/' className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400 px-4 py-2 rounded' : 'font-bold px-4 py-2'}>
+          <NavLink to='/' className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 Home
               </NavLink>
-              <NavLink to='/listed' className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400 px-4 py-2 rounded' : 'font-bold px-4 py-2'}>
+              <NavLink to='/listed-books' className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 Listed Books
               </NavLink>
-              <NavLink to='/pages' className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400 px-4 py-2 rounded' : 'font-bold px-4 py-2'}>
+              <NavLink to="/pages" className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 Pages to read
               </NavLink>
+              <NavLink to="/contact" className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
+                Contact
+              </NavLink>
+              <NavLink to="/about" className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
+                About
+              </NavLink>
+              
           </ul>
         </div>
         <div className="navbar-end space-x-3">
-          <a className="btn bg-green-400 text-white">Sign in</a>
-          <a className="btn bg-green-300 text-white">Sign up</a>
+          <Link className="bg-green-300 font-bold border text-white px-2 py-1 rounded-md">Sign in</Link>
+          <Link className="bg-green-400 font-bold border text-white px-2 py-1 rounded-md">Sign up</Link>
         </div>
       </div>
     </div>

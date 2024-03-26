@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import banner from "./../../assets/Deception_Point-Dan_Brown-1d1da-33660.png";
 const Banner = () => {
   return (
@@ -9,12 +9,12 @@ const Banner = () => {
             Books to freshen up <br /> your bookshelf
           </h2>
           <button className="bg-green-400 text-white font-bold px-4 py-2 rounded">
-            View the list
+            <Link to="/listed-books">View the list</Link>
           </button>
         </div>
         <div>
           
-          <img className="rounded -skew-y-3" src={banner} alt="" />
+          <img className="rounded sm:w-[300px] w-28" src={banner} alt="" />
         </div>
         
       </div>
