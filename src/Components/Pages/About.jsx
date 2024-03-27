@@ -15,10 +15,10 @@ const About = () => {
               Welcome to [Book Vibe], your premier destination for quality books. At [Book Vibe], we are dedicated to providing our customers with an exceptional reading experience.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              Our carefully curated collection features a diverse range of genres, from timeless classics to contemporary bestsellers. Whether you're a passionate bibliophile or just beginning your reading journey, we have something for every reader.
+              Our carefully curated collection features a diverse range of genres, from timeless classics to contemporary bestsellers. Whether youre a passionate bibliophile or just beginning your reading journey, we have something for every reader.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              As avid readers ourselves, we understand the joy and enrichment that books bring to our lives. That's why we strive to create a welcoming environment where you can explore, discover, and indulge in the pleasure of reading.
+              As avid readers ourselves, we understand the joy and enrichment that books bring to our lives. Thats why we strive to create a welcoming environment where you can explore, discover, and indulge in the pleasure of reading.
             </p>
             <p className="text-lg text-gray-700">
               Thank you for choosing [Book Vibe]. We look forward to serving you and helping you find your next literary adventure.

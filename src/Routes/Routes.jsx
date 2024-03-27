@@ -8,9 +8,6 @@ import PagesToRead from "../Components/Pages/PagesToRead";
 import Error from "../Components/Pages/Error";
 import Contact from "../Components/Pages/Contact";
 import About from "../Components/Pages/About";
-import Read from "../Components/Bookmark/Read";
-import Wish from "../Components/Bookmark/Wish";
-
 export const router = createBrowserRouter([
   {
     path: "/",

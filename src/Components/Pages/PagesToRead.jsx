@@ -31,7 +31,7 @@ const TriangleBar = (props) => {
   return (
     <div className="h-[calc(100vh-70px)] flex justify-center items-center">
       <BarChart
-      width={1000}
+      width={1500}
       height={500}
       data={books}
       margin={{
