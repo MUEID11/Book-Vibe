@@ -44,7 +44,7 @@ const BookDetails = () => {
     
     <div className="hero min-h-[calc(100vh-68px)] bg-base-200">
       <div className="hero-content flex-col lg:flex-row">
-        <img src={image} className="max-w-sm rounded-lg shadow-2xl" />
+        <img src={image} className="max-w-xs rounded-lg shadow-2xl" />
         <div className="space-y-4">
           <h1 className="text-4xl font-bold">{book_name}</h1>
           <h2 className="text-2xl font-semibold">By: {author}</h2>
