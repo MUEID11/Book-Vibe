@@ -1,13 +1,15 @@
 import { useParams } from "react-router-dom";
 import useBooksData from "../Hooks/useBooksData";
 import { useEffect, useState } from "react";
-import { saveBook, saveWishList, getBooks } from "../../Utils/localStorage";
-import toast from "react-hot-toast";
+import { saveBook, saveWishList } from "../../Utils/localStorage";
+import Spinner from "../CustomSpinner/Spinner";
+
 
 const BookDetails = () => {
   const { id } = useParams();
   const [bookData, setBookData] = useState([]);
   const { books, loading } = useBooksData();
+ 
 
   useEffect(() => {
     if (books) {
@@ -34,6 +36,9 @@ const BookDetails = () => {
   }
   const handleWishList = (bookData) =>{
     saveWishList(bookData);
+  }
+  if(loading){
+    return <Spinner/>
   }
   return (
     

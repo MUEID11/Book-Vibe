@@ -1,10 +1,13 @@
 
 import Book from "./Book";
 import useBooksData from "../Hooks/useBooksData";
+import Spinner from "../CustomSpinner/Spinner";
 
 const Books = () => {
     const {books, loading} = useBooksData();
-
+    if(loading){
+      return <Spinner/>
+    }
   return (
     <>
     <div className="container mx-auto my-16">

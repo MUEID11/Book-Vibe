@@ -5,12 +5,16 @@ const useBooksData = () => {
   const [loading, setLoading] = useState(true);
   useEffect(()=>{
     const fetchData = async() =>{
+      
         setLoading(true);
         const res = await fetch('/books.json');
         const books = await res.json();
         setBooks(books);
-        setLoading(false)
+        // setLoading(false)
     };
+    setTimeout(()=>{
+      setLoading(false)
+    },500)
     fetchData();
   },[])
   return {books, loading};
