@@ -18,7 +18,7 @@ const Read = ({ sortId }) => {
 
   return (
     <>
-      <div className="container mx-auto gap-10">
+      <div className="container sm:mx-auto sm:gap-10">
         {books.map((book) => (
           <ReadBook book={book} key={book.id} />
         ))}

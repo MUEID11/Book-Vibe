@@ -10,7 +10,7 @@ const About = () => {
             <img src={bookstore} alt="Bookstore" className="w-4/5 rounded-lg shadow-lg mb-4" />
             <p className="text-lg font-bold text-gray-700 mb-2">Our Bookstore</p>
           </div>
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center p-6">
             <p className="text-lg text-gray-700 mb-6">
               Welcome to [Book Vibe], your premier destination for quality books. At [Book Vibe], we are dedicated to providing our customers with an exceptional reading experience.
             </p>

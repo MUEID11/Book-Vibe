@@ -54,10 +54,10 @@ const TriangleBar = (props) => {
   );
 };
 PagesToRead.propTypes = {
-  fill: PropTypes.string.isRequired,
-  x: PropTypes.number.isRequired,
-  y: PropTypes.number.isRequired,
-  width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired
+  fill: PropTypes.string,
+  x: PropTypes.number,
+  y: PropTypes.number,
+  width: PropTypes.number,
+  height: PropTypes.number,
 }
 export default PagesToRead;

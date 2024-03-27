@@ -13,7 +13,7 @@ const Book = ({ book }) => {
         />
 
         <div className="mt-6 mb-2">
-          <div className="space-x-2"> 
+          <div className="sm:space-x-2 space-x-1"> 
               {
                 tags?.slice(0,2).map((tag,idx) => <span key={idx} className="text-green-400 bg-green-100 p-1 rounded-md">{tag}</span>)
               }

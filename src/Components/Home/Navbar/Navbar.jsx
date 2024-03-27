@@ -29,16 +29,16 @@ const Navbar = () => {
               <NavLink to='/' className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 Home
               </NavLink>
-              <NavLink to='/listed-books' className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
+              <NavLink to='/listed-books' className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 Listed Books
               </NavLink>
-              <NavLink to="/pages" className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
+              <NavLink to="/pages" className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 Pages to read
               </NavLink>
-              <NavLink to="/contact" className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
+              <NavLink to="/contact" className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 Contact
               </NavLink>
-              <NavLink to="/about" className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
+              <NavLink to="/about" className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 About
               </NavLink>
             </ul>
@@ -50,16 +50,16 @@ const Navbar = () => {
           <NavLink to='/' className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 Home
               </NavLink>
-              <NavLink to='/listed-books' className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
+              <NavLink to='/listed-books' className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 Listed Books
               </NavLink>
-              <NavLink to="/pages" className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
+              <NavLink to="/pages" className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 Pages to read
               </NavLink>
-              <NavLink to="/contact" className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
+              <NavLink to="/contact" className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 Contact
               </NavLink>
-              <NavLink to="/about" className={({isActive})=> isActive ? 'ext-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
+              <NavLink to="/about" className={({isActive})=> isActive ? 'text-green-400 font-bold border border-green-400 px-4 py-2 rounded hover:bg-green-400 hover:font-bold  hover:text-white transition-colors' : 'font-bold px-4 py-2'}>
                 About
               </NavLink>
               

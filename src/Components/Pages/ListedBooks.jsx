@@ -29,7 +29,7 @@ const ListedBooks = () => {
         </div>
         {/* tabs*/}
 
-        <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800">
+        <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start sm:flex-nowrap dark:bg-gray-100 dark:text-gray-800">
           <div role="tablist" className="tabs tabs-lifted">
             <input
               checked={tab === "read"}

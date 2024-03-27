@@ -60,9 +60,9 @@ const BookDetails = () => {
               {tags?.map((tag, idx) => (
                 <span
                   key={idx}
-                  className="text-black-400 font-semibold bg-green-300 px-4 py-2 rounded-md"
+                  className="text-black-400 sm:font-semibold bg-green-300 sm:px-4 sm:py-2 px-1 py-1 rounded-md"
                 >
-                  # {tag}
+                  {`#${tag}`}
                 </span>
               ))}
             </p>
