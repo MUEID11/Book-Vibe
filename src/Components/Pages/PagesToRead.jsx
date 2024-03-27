@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getBooks } from "../../Utils/localStorage";
 import { Bar, BarChart, CartesianGrid, Cell, XAxis, YAxis } from "recharts";
-
+import PropTypes from 'prop-types';
 const PagesToRead = () => {
   const [books, setBooks] = useState([]);
   useEffect(()=>{
@@ -53,5 +53,11 @@ const TriangleBar = (props) => {
     </div>
   );
 };
-
+PagesToRead.propTypes = {
+  fill: PropTypes.string.isRequired,
+  x: PropTypes.number.isRequired,
+  y: PropTypes.number.isRequired,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired
+}
 export default PagesToRead;
