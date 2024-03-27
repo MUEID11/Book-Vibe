@@ -29,16 +29,6 @@ export const router = createBrowserRouter([
       {
         path: "/listed-books",
         element: <ListedBooks />,
-        children: [
-          {
-            index: true,
-            element: <Read />,
-          },
-          {
-            path:'wish',
-            element: <Wish/>
-          },
-        ],
       },
       {
         path: "/pages",

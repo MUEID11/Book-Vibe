@@ -1,22 +1,27 @@
 import { useEffect, useState } from "react";
 import { getBooks } from "../../Utils/localStorage";
-
 import ReadBook from "./Readbook";
 
-
-const Read = () => {
+const Read = ({ sortId }) => {
   const [books, setBooks] = useState([]);
-  useEffect(()=>{
+  useEffect(() => {
     const storedBooks = getBooks();
-    setBooks(storedBooks);
-  },[])
-  
+    if (sortId) {
+      const sorted = storedBooks?.sort((a, b) => a[sortId] - b[sortId]);
+      setBooks(sorted);
+    } else {
+      setBooks(storedBooks);
+    }
+  }, [sortId]);
+
   return (
-    <div className="container mx-auto gap-10">
-        {
-          books.map(book => <ReadBook book={book} key={book.id}/>)
-        }
-    </div>
+    <>
+      <div className="container mx-auto gap-10">
+        {books.map((book) => (
+          <ReadBook book={book} key={book.id} />
+        ))}
+      </div>
+    </>
   );
 };
 

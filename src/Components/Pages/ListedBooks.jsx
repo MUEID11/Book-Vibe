@@ -1,44 +1,69 @@
-import { Link, Outlet } from "react-router-dom";
-import { FaBookOpenReader } from "react-icons/fa6";
-import { BiSolidBookmarkHeart } from "react-icons/bi";
+// import { Link, Outlet, useNavigate } from "react-router-dom";
+// import { FaBookOpenReader } from "react-icons/fa6";
+// import { BiSolidBookmarkHeart } from "react-icons/bi";
 import { useState } from "react";
+import Read from "../Bookmark/Read";
+import Wish from "../Bookmark/Wish";
 const ListedBooks = () => {
-    const[tabIndex, setTabIndex] = useState(0);
+  const [tab, setTab] = useState("read");
+  const [sortId, setSortId] = useState("");
+
   return (
     <>
       <div className="container mx-auto">
         <div className="container mx-auto bg-gray-50 p-6 rounded-lg my-6">
           <h1 className="text-4xl font-bold text-center">Books</h1>
         </div>
-        <div className="my-6 items-center">
-          <button className="bg-green-500 font-bold p-2 text-white">
-            Short by
-          </button>
+        <div className="flex justify-center">
+          <div>
+            <select
+              onChange={(e) => setSortId(e.target.value)}
+              className="rounded-lg text-lg px-4 py-2 border border-gray-300 shadow-sm focus:outline-none focus:border-blue-500"
+            >
+              <option value="">Sort</option>
+              <option value="rating">Rating</option>
+              <option value="total_pages">Number of pages</option>
+              <option value="year_of_publishing">Publish year</option>
+            </select>
+          </div>
         </div>
         {/* tabs*/}
+
         <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800">
-          <Link
-          onClick={()=>setTabIndex(0)}
-            to=''
-            rel="noopener noreferrer"
-            href="#"
-            className={`flex items-center flex-shrink-0 px-5 py-3 ${tabIndex === 0 ? 'border border-b-0': "border-b"} space-x-2 rounded-t-lg dark:border-gray-600 dark:text-gray-900`}
-          >
-            <FaBookOpenReader />
-            <span>Read Books</span>
-          </Link>
-          <Link
-          to={`wish`}
-          onClick={()=>setTabIndex(1)}
-            rel="noopener noreferrer"
-            href="#"
-            className={`flex items-center flex-shrink-0 px-5 py-3 ${tabIndex === 1 ? 'border border-b-0': "border-b"} space-x-2 rounded-t-lg dark:border-gray-600 dark:text-gray-900`}
-          >
-            <BiSolidBookmarkHeart />
-            <span>Wishlist Books</span>
-          </Link>
+          <div role="tablist" className="tabs tabs-lifted">
+            <input
+              checked={tab === "read"}
+              onChange={() => setTab("read")}
+              type="radio"
+              name="my_tabs_2"
+              role="tab"
+              className="tab"
+              aria-label="read"
+            />
+            <div
+              role="tabpanel"
+              className="tab-content bg-base-100 border-base-300 rounded-box p-6"
+            >
+              <Read sortId={sortId} />
+            </div>
+
+            <input
+              checked={tab === "wishlist"}
+              onChange={() => setTab("wishlist")}
+              type="radio"
+              name="my_tabs_2"
+              role="tab"
+              className="tab"
+              aria-label="wish"
+            />
+            <div
+              role="tabpanel"
+              className="tab-content bg-base-100 border-base-300 rounded-box p-6"
+            >
+              <Wish sortId={sortId} />
+            </div>
+          </div>
         </div>
-        <Outlet/>
       </div>
     </>
   );
