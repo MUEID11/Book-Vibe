@@ -11,7 +11,7 @@ const getBooks = () =>{
 //save
 const saveBook = book => {
     let books = getBooks();
-    const isExist = books.find(b => b.id === book.id)
+    const isExist = books?.find(b => b.id === book.id)
     if(isExist){
         return toast.error('Already in read');
     }
@@ -30,12 +30,12 @@ const getWishes = () =>{
 }
 const saveWishList = book =>{
     let wishes = getWishes();
-    const isExist = wishes.find(b => b.id === book.id);
+    const isExist = wishes?.find(b => b.id === book.id);
     if(isExist){
         return toast.error('Already in wishlist');
     }
     let books= getBooks();
-    const isExistInBooks = books.find(b => b.id === book.id);
+    const isExistInBooks = books?.find(b => b.id === book.id);
     if(isExistInBooks){
         return toast.error('Already in read');
     }

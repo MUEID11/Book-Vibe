@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import { getBooks } from "../../Utils/localStorage";
 import ReadBook from "./Readbook";
@@ -7,7 +8,8 @@ const Read = ({ sortId }) => {
   useEffect(() => {
     const storedBooks = getBooks();
     if (sortId) {
-      const sorted = storedBooks?.sort((a, b) => a[sortId] - b[sortId]);
+      console.log(sortId);
+      const sorted = storedBooks?.sort((a, b) => b[sortId] - a[sortId]);
       setBooks(sorted);
     } else {
       setBooks(storedBooks);
@@ -25,4 +27,7 @@ const Read = ({ sortId }) => {
   );
 };
 
+Read.propTypes = {
+  sortId: PropTypes.string,
+};
 export default Read;

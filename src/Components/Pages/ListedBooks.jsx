@@ -38,7 +38,7 @@ const ListedBooks = () => {
               name="my_tabs_2"
               role="tab"
               className="tab"
-              aria-label="read"
+              aria-label="Read"
             />
             <div
               role="tabpanel"
@@ -54,7 +54,7 @@ const ListedBooks = () => {
               name="my_tabs_2"
               role="tab"
               className="tab"
-              aria-label="wish"
+              aria-label="Wishlist"
             />
             <div
               role="tabpanel"
