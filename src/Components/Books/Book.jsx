@@ -1,10 +1,11 @@
 import { CiStar } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types'
 const Book = ({ book }) => {
   const {id, book_name, author, image, category, rating,tags } = book || {};
   return (
     <Link to={`/book-details/${id}`}>
-      <div className="max-w-xs p-6 rounded-md shadow-md dark:bg-gray-50 dark:text-gray-900">
+      <div className="sm:max-w-sm max-w-full sm:m-0 m-4 p-6 rounded-md shadow-md dark:bg-gray-50 dark:text-gray-900">
         <img
           src={image}
           alt=""
@@ -37,5 +38,9 @@ const Book = ({ book }) => {
     </Link>
   );
 };
+
+Book.propTypes = {
+  book: PropTypes.object.isRequired,
+}
 
 export default Book;

@@ -43,7 +43,7 @@ const Navbar = () => {
               </NavLink>
             </ul>
           </div>
-          <Link to='/' className="btn btn-ghost text-2xl font-extrabold">BookVibe</Link>
+          <Link to='/' className="btn btn-ghost sm:text-2xl font-extrabold">BookVibe</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-4 cursor-pointer">
@@ -66,8 +66,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end space-x-3">
-          <Link className="bg-green-300 font-bold border text-white px-2 py-1 rounded-md">Sign in</Link>
-          <Link className="bg-green-400 font-bold border text-white px-2 py-1 rounded-md">Sign up</Link>
+          <Link className="bg-green-400 hover:bg-gray-400 transition sm:font-bold border text-white px-2 py-1 rounded-md">Sign in</Link>
+          <Link className="bg-blue-400 hover:bg-gray-400 transition sm:font-bold border text-white px-2 py-1 rounded-md">Sign up</Link>
         </div>
       </div>
     </div>

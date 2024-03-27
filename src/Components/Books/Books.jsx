@@ -10,8 +10,8 @@ const Books = () => {
     }
   return (
     <>
-    <div className="container mx-auto my-16">
-      <h2 className="text-4xl font-bold text-center">Books</h2>
+    <div className="container mx-auto sm:my-16 my-4">
+      <h2 className="sm:text-4xl text-2xl font-bold text-center">Books</h2>
     </div>
     <div className="container mx-auto sm:grid lg:grid-cols-4 md:grid-cols-2 gap-10">
         {
