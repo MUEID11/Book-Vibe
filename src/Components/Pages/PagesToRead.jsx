@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getBooks } from "../../Utils/localStorage";
-import { Bar, BarChart, CartesianGrid, Cell, XAxis, YAxis } from "recharts";
+import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, XAxis, YAxis } from "recharts";
 import PropTypes from 'prop-types';
 const PagesToRead = () => {
   const [books, setBooks] = useState([]);
@@ -30,9 +30,10 @@ const TriangleBar = (props) => {
 };
   return (
     <div className="h-[calc(100vh-70px)] flex justify-center items-center">
+      {books? <ResponsiveContainer width={1000} height="100%">
       <BarChart
-      width={1500}
-      height={500}
+      width={1000}
+      height='100%'
       data={books}
       margin={{
         top: 20,
@@ -50,7 +51,9 @@ const TriangleBar = (props) => {
         ))}
       </Bar>
     </BarChart>
+      </ResponsiveContainer> : "NO DATA FOUND"}
     </div>
+        
   );
 };
 PagesToRead.propTypes = {

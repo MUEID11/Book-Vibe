@@ -18,12 +18,12 @@ const ReadBook = ({ book }) => {
   } = book || {};
   return (
     <div>
-      <div className="bg-base-100 shadow-xl sm:flex rounded-xl border my-6 sm:w-full p-5 w-[calc(100vw-18px)]">
+      <div className="bg-base-100 shadow-xl sm:flex rounded-xl border my-6 w-full p-5 ">
         <div className="p-4">
           <img
             src={image}
             alt="Shoes"
-            className="rounded-xl sm:max-h-48 max-h-min"
+            className="rounded-xl max-h-48"
           />
         </div>
         <div className="text-left h-full space-y-3">
@@ -43,14 +43,12 @@ const ReadBook = ({ book }) => {
                 ))}
               </p>
             </div>
-            <div className="mx-10">
-              <span className="flex items-center space-x-2 text-sm sm:text-lg">
-                <TbBookUpload />
-                <p>Year of publishing: {year_of_publishing}</p>
-              </span>
-            </div>
           </div>
-          <div className="flex items-center sm:space-x-12">
+          <div className="flex-col items-center sm:space-x-12">
+            <span className="flex items-center space-x-2 text-sm sm:text-lg">
+              <TbBookUpload/>
+              <p>Year of publish: {year_of_publishing}</p>
+            </span>
             <span className="flex items-center space-x-2 text-sm sm:text-lg">
             <RiMapPinUserFill />
               <p>Publisher: {publisher}</p>
@@ -61,7 +59,7 @@ const ReadBook = ({ book }) => {
             </span>
           </div>
           <hr />
-          <div className="sm:space-x-4 space-x-2">
+          <div className="flex flex-col md:flex-row gap-2 text-center">
             <button className="bg-blue-400 lg:text-xl font-bold text-xs px-2 py-1  rounded-full">Category: {category}</button>
             <button className="bg-orange-400 lg:text-xl font-bold text-xs px-2 py-1 rounded-full">Ratings: {rating}</button>
             <Link to={`/book-details/${id}`} className="bg-green-400 lg:text-xl font-bold text-xs px-2 py-1 rounded-full">View details</Link>
