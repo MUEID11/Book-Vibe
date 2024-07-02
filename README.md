@@ -15,8 +15,12 @@ MyBookshelf is a personalized virtual bookshelf application designed to help use
 - **Persistent Storage**: Utilizes browser's local storage to store bookshelf data locally, ensuring data persistence and seamless user experience even after page reloads or browser sessions.
 
 ## Getting Started
-
-To get started with MyBookshelf, simply visit the live site URL provided above and sign up for an account. Once logged in, you can start adding books to your bookshelf, sorting and filtering them, and exploring new reads with ease.
+1. **Clone the Repository**: From [GitHub URL].
+2. **Install Dependencies**: Run npm install.
+3. **Set Environment Variables**: For Firebase and mongodb.
+4. **Start the Server**: Run npm start.
+6. **Launch the Client**: In the client directory, run npm start.
+7. **Explore the Platform**: [https://splendorous-youtiao-3622b8.netlify.app](https://splendorous-youtiao-3622b8.netlify.app)
 
 ## Feedback and Contributions
 
